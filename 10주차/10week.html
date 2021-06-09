@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+        h2 {
+            color: green;
+        }
+        </style>
+    </head>
+    <body>
+        <!--오디오 태그-->
+        <h1>-----음악 재생-----</h1>
+    <div>
+     <audio controls loop>
+     <source src="The Crisis.mp3" type="audio/mp3">
+     </audio>
+    </div>
+        <!--비디오 태그-->
+        <h1>-----영상 재생-----</h1>
+    <div>
+     <video controls poster="https://pixabay.com/illustrations/forest-mountains-night-sky-5375005/640x360">
+     <source src="꾸준함.mp4" type="video/mp4">
+     <source src="꾸준함.webm" type="video/webm">
+     </div>
+        <!--입력 양식 태그-->
+        <h1>-----입력 양식 태그-----</h1>
+        <div>
+        <h2>설문조사</h2>
+        ◆나라: <select>
+            <option>한국</option>
+            <option>미국</option>
+        </select><br>
+        ◆좋아하는 과일: <select multiple>
+            <option>사과</option>
+            <option>포도</option>
+            <option>망고</option>
+        </select><br>
+        ◆학과: <select>
+            <optgroup label="전자정보대학">
+                <option>컴퓨터공학과</option>
+                <option>전자공학과</option>
+                <option>소프트웨어</option>
+            <optgroup label="인문대학">
+                <option>국어국문학과</option>
+                <option>사학과</option>
+                <option>철학과</option>
+            </optgroup>
+            </optgroup>
+        </select>
+        </div>
+
+        <div>
+        <form>
+            <fieldset>
+                <legend>입력 양식</legend>
+                <table>
+                    <tr>
+                        <td><label for="name">이름</label></td>
+                        <td><input id="name" type=text></td>
+                    </tr>
+                    <tr>
+                        <td><label for="password">비밀번호</label></td>
+                        <td><input id="password" type=password></td>
+                    </tr>
+                </table>
+            </fieldset>
+        ◆파일 선택 <input type=file name=“file” value=“file”><br>
+        ◆ 해당 되는 것을 모두 체크하시오<br>
+        1. 학생<input type=checkbox> 
+        2. 남자<input type=checkbox>
+        3. 20대<input type=checkbox><br>
+        ◆ 5개 중 하나 선택하시오<br>
+        매우 아니다<input type=radio name="radio">
+        아니다<input type=radio name="radio">
+        보통<input type=radio name="radio">
+        맞다<input type=radio name="radio">
+        매우 맞다<input type=radio name="radio"><br>
+        <input type=hidden name=“hidden” value=“hidden”>
+        ※ 초기화 하려면 클릭하시오 <input type=reset value=reset> <br>
+        ※ 제출하려면 클릭하시오 <input type=submit value=submit> <br>
+        <input type=image src="이미지 태그 사진.jpg"> <br>
+        </form>
+        </div>
+    </body>
+</html>
